@@ -7,10 +7,10 @@
 
     <size
         android:width="51dp"
-        android:height="30dp" />
+        android:height="25dp" />
 
     <solid
-        android:color="#8904B1" />
+        android:color="#A901DB" />
 
     <!--stroke
         android:width="2dp"
