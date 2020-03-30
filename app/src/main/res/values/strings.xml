@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">마하</string>
+
+    <string name="setting">설정</string>
+    <string name="proflie">프로필 수정</string>
+    <string name="push">푸시 알림</string>
+
+    <string name="updata">업데이트 안내</string>
+    <string name="tag">취미 및 태그 추가 안내</string>
+    <string name="service">서비스 점검/중단 안내</string>
+
+    <string name="open">오픈소스 라이선스</string>
+    <string name="user">개인정보 처리방침</string>
+    <string name="office">회사정보</string>
+    <string name="version">버전</string>
 </resources>
