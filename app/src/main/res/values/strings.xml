@@ -13,4 +13,7 @@
     <string name="user">개인정보 처리방침</string>
     <string name="office">회사정보</string>
     <string name="version">버전</string>
+
+    <string name="name">마이너</string>
+    <string name="local">서울특별시 중구</string>
 </resources>
