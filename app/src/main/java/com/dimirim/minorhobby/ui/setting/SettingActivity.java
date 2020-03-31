@@ -71,6 +71,7 @@ public class SettingActivity extends AppCompatActivity {
 
         vs = (TextView)findViewById(R.id.vs);
 
+        SetListener();
     }
     public void SetListener() {
         back.setOnClickListener(new View.OnClickListener() {
@@ -89,23 +90,66 @@ public class SettingActivity extends AppCompatActivity {
         push_notification.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Bitmap mLargeIconForNoti = BitmapFactory.decodeResource(getResources(), R.drawable.logo);
-                PendingIntent mPendingIntent = PendingIntent.getActivity(SettingActivity.this, 0,
-                        new Intent(getApplicationContext(), SettingActivity.class),
-                        PendingIntent.FLAG_UPDATE_CURRENT);
+                // 스위치 버튼이 체크되었는지 검사하여 텍스트뷰에 각 경우에 맞게 출력합니다.
+                if (isChecked){
+                    //체크 됐을 때
+                    Bitmap mLargeIconForNoti = BitmapFactory.decodeResource(getResources(), R.drawable.logo);
+                    PendingIntent mPendingIntent = PendingIntent.getActivity(SettingActivity.this, 0,
+                            new Intent(getApplicationContext(), SettingActivity.class),
+                            PendingIntent.FLAG_UPDATE_CURRENT);
 
-                NotificationCompat.Builder mBulider =
-                        new NotificationCompat.Builder(SettingActivity.this)
-                                .setSmallIcon(R.drawable.logo)
-                                .setContentTitle("마하")
-                                .setContentText("마이너님이 게시물에 좋아요를 눌렀습니다.")
-                                .setDefaults(Notification.DEFAULT_SOUND)
-                                .setLargeIcon(mLargeIconForNoti)
-                                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                                .setAutoCancel(true)
-                                .setContentIntent(mPendingIntent);
-                NotificationManager mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-                mNotificationManager.notify(0, mBulider.build());
+                    NotificationCompat.Builder mBulider =
+                            new NotificationCompat.Builder(SettingActivity.this)
+                                    .setSmallIcon(R.drawable.logo)
+                                    .setContentTitle("마하")
+                                    .setContentText("마이너님이 게시물에 좋아요를 눌렀습니다.")
+                                    .setDefaults(Notification.DEFAULT_SOUND)
+                                    .setLargeIcon(mLargeIconForNoti)
+                                    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                                    .setAutoCancel(true)
+                                    .setContentIntent(mPendingIntent);
+                    NotificationManager mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                    mNotificationManager.notify(0, mBulider.build());
+                } else {
+                    //체크 안됐을 때
+
+                }
+            }
+        });
+        updata_guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        hobbie_tag_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        service_check_guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        open_source_license.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        privacy_policy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        company_information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
