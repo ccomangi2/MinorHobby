@@ -4,13 +4,13 @@
     <shape android:shape="rectangle" >
         <gradient
             android:type="radial"
-            android:gradientRadius="43%"
+            android:gradientRadius="40%"
             android:centerX="50%"
-            android:centerY="50%"
-            android:startColor="#D8D8D8" />
+            android:centerY="53%"
+            android:startColor="#699d3cc8" />
         <size
-            android:height="100dp"
-            android:width="100dp" />
+            android:height="90dp"
+            android:width="90dp" />
     </shape>
 </item>
 </layer-list>
