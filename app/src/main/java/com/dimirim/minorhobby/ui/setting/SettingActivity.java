@@ -20,10 +20,5 @@ public class SettingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-
-        ActionBar actionBar = getSupportActionBar() ;
-        actionBar.setTitle("설정") ;
-
-        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 }
