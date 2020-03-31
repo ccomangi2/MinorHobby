@@ -16,12 +16,12 @@
         android:background="#FFFFFF">
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/back"
             android:layout_width="42dp"
             android:layout_height="37dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="#FFFFFF"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintEnd_toStartOf="@+id/title"
             app:layout_constraintHorizontal_bias="0.048"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,7 +29,7 @@
             android:contentDescription="@string/todo" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/setting"
@@ -58,16 +58,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/proflie"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="5dp"
-                android:background="@drawable/shadow"
                 android:src="@mipmap/ic_launcher" />
 
             <LinearLayout
@@ -76,7 +76,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/nickname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -88,7 +88,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/local_situation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -101,9 +101,9 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/profile_modify"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -114,9 +114,9 @@
             android:textSize="18sp" />
 
         <Switch
-            android:id="@+id/switch1"
-            android:layout_width="358dp"
-            android:layout_height="65dp"
+            android:id="@+id/push_notification"
+            android:layout_width="375dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
@@ -145,9 +145,9 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/updata_guide"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -158,9 +158,9 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/hobbie_tag_add"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -171,9 +171,9 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/service_check_guide"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
@@ -194,9 +194,9 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/open_source_license"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -207,9 +207,9 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/privacy_policy"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -220,9 +220,9 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/company_information"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:background="@drawable/border"
@@ -238,19 +238,20 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button10"
+            <TextView
+                android:id="@+id/version"
                 android:layout_width="36dp"
-                android:layout_height="65dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="20dp"
                 android:background="#FFFFFF"
                 android:gravity="center_vertical"
                 android:stateListAnimator="@null"
                 android:text="@string/version"
+                android:textColor="#000000"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/vs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/vs"
