@@ -15,30 +15,31 @@
 
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="25dp"
-            android:layout_height="37dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="19.2dp"
+            android:layout_height="18.4dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="13.5dp"
             android:backgroundTint="#FFFFFF"
             android:contentDescription="@string/todo"
-            app:layout_constraintEnd_toStartOf="@+id/title"
-            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="27.5dp"
-            android:layout_height="22.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="166.5dp"
             android:layout_marginTop="11.5dp"
             android:layout_marginEnd="166dp"
             android:layout_marginBottom="11dp"
             android:fontFamily="@font/regular"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="@string/setting"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +86,7 @@
                     android:gravity="center_vertical"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="10sp"
+
                     android:text="@string/name"
                     android:textColor="#000000"
                     android:textSize="20.5sp"
@@ -93,13 +95,15 @@
                 <TextView
                     android:id="@+id/local_situation"
                     android:layout_width="match_parent"
-                    android:layout_height="21.5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5.5dp"
-                    android:layout_marginTop="0.5dp"
                     android:layout_marginBottom="11dp"
                     android:gravity="center_vertical"
                     android:lineSpacingExtra="7sp"
                     android:text="@string/local"
+                    android:textColor="#999999"
+                    android:textColorLink="#999999"
+                    android:textIsSelectable="false"
                     android:textSize="14.5sp" />
 
             </LinearLayout>
