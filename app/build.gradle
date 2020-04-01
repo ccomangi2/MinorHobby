@@ -53,6 +53,9 @@ dependencies {
     //CircleImage
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
+    //Switch
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+
     //Testing
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

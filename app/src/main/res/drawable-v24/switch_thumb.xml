@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:left="2dp"
-        android:right="2dp"
-        android:top="2dp"
-        android:bottom="1dp">
+    <item
+        android:left="2.3dp"
+        android:right="2.3dp"
+        android:top="3.8dp"
+        android:bottom="0.8dp">
         <shape android:shape="oval">
-            <solid android:color="#59151515" />
+            <size
+                android:height="26dp"
+                android:width="26dp"/>
+            <solid android:color="#3d000000"    />
         </shape>
     </item>
-    <item android:left="2.5dp"
-        android:right="2.5dp"
-        android:top="2.5dp"
-        android:bottom="2.5dp">
+    <item
+        android:left="2.3dp"
+        android:right="2.3dp"
+        android:top="2.3dp"
+        android:bottom="2.3dp">
         <shape android:shape="oval">
-            <solid android:color="#59848484" />
-        </shape>
-    </item>
-    <item android:left="3dp"
-        android:right="3dp"
-        android:top="3dp"
-        android:bottom="3dp">
-        <shape android:shape="oval">
+            <size
+                android:height="26dp"
+                android:width="26dp"/>
             <solid android:color="#FFFFFF" />
         </shape>
-    </item>
-    <item>
-        <bitmap android:src="@android:drawable/ic_btn_speak_now"
-            android:tint="#FFFFFF" />
     </item>
 </layer-list>

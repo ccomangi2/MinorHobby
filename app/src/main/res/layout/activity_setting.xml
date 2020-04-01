@@ -17,11 +17,11 @@
             android:id="@+id/back"
             android:layout_width="25dp"
             android:layout_height="37dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:backgroundTint="#FFFFFF"
             android:contentDescription="@string/todo"
             app:layout_constraintEnd_toStartOf="@+id/title"
-            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintHorizontal_bias="0.095"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
@@ -140,6 +140,7 @@
             android:textOn=""
             android:textSize="15sp"
             android:thumb="@drawable/switch_thumb"
+            android:switchPadding="20dp"
             android:thumbTextPadding="15dp"
             android:track="@drawable/switch_track_selector" />
 
