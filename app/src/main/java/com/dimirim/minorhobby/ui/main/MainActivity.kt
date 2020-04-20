@@ -2,12 +2,11 @@ package com.dimirim.minorhobby.ui.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.dimirim.minorhobby.R
-import com.dimirim.minorhobby.ui.setting.SettingActivity
+import com.dimirim.minorhobby.ui.editprofile.EditProfileActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener(View.OnClickListener {
             val intent = Intent(
                 applicationContext,
-                SettingActivity::class.java
+                EditProfileActivity::class.java
             )
             startActivity(intent)
         })

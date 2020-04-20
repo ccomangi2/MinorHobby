@@ -20,4 +20,10 @@
     <string name="todo">TODO</string>
 
     <string name="editprofile">프로필 수정</string>
+    <string name="nickname">닉네임</string>
+    <string name="myname">마이너</string>
+    <string name="localtitle">지역</string>
+    <string name="re">스피너 테스트</string>
+    <string name="ree">Spinner 활용</string>
+    <string name="crystal">수정하기</string>
 </resources>

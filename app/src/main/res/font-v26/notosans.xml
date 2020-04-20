@@ -3,33 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <font
         android:fontStyle="normal"
-        android:fontWeight="400"
-        android:font="@font/notosans_black"
-        app:font="@font/notosans_black"
+        android:fontWeight="700"
+        android:font="@font/notosans_bold"
+        app:font="@font/notosans_bold"
         app:fontStyle="normal"
-        app:fontWeight="400" />
+        app:fontWeight="700" />
 
     <font
         android:fontStyle="normal"
-        android:fontWeight="400"
+        android:fontWeight="900"
         android:font="@font/notosans_black"
         app:font="@font/notosans_black"
         app:fontStyle="normal"
-        app:fontWeight="400" />
+        app:fontWeight="900" />
 
     <font
         android:fontStyle="normal"
-        android:fontWeight="400"
+        android:fontWeight="300"
         android:font="@font/notosans_light"
         app:font="@font/notosans_light"
         app:fontStyle="normal"
-        app:fontWeight="400" />
+        app:fontWeight="300" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="100"
+        android:font="@font/notosans_thin"
+        app:font="@font/notosans_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/notosans_midium"
+        app:font="@font/notosans_midium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
 
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/notosans_thin"
-        app:font="@font/notosans_thin"
+        android:font="@font/notosans_regular"
+        app:font="@font/notosans_regular"
         app:fontStyle="normal"
         app:fontWeight="400" />
 </font-family>

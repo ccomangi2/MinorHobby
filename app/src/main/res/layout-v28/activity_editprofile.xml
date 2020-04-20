@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".ui.setting.SettingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="19.3dp"
+            android:layout_height="15.8dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="166.5dp"
+            android:layout_marginTop="11.5dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/notosans"
+            android:textFontWeight="500"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/proflie"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shadow"
+            android:src="@drawable/proflie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/notosans"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/nickname"
+            android:textColor="#000000"
+            android:textFontWeight="700"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proflie"
+            app:lineHeight="19sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/notosans"
+            android:hint="@string/editprofile"
+            android:inputType="textPersonName"
+            android:text="@string/myname"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:lineHeight="19sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/notosans"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/localtitle"
+            android:textColor="#000000"
+            android:textFontWeight="700"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:lineHeight="19sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight=".28"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/transparent"
+                android:entries="@array/local_choise"
+                android:gravity="clip_vertical"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@mipmap/drop"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="43dp"
+            android:background="@drawable/box"
+            android:fontFamily="@font/notosans"
+            android:text="@string/crystal"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
